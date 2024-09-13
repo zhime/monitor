@@ -1,0 +1,10 @@
+mysql:
+  username: slave
+  password: Slave123.!
+  host: 192.168.34.31
+  port: 3306
+  database: bmp
+
+ding-talk:
+  web-hook: https://oapi.dingtalk.com/robot/send?access_token=41b0c9c2b3bd262fe6b9aae8ac889a0216d3cbb339857444efa6fb42fc8086cf
+  secret: SEC0ab91c24c0dc7462e620647b8e80d705673e107ec3b297f838fc2157cf5054d8
