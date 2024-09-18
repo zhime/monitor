@@ -1,8 +1,11 @@
 package main
 
 import (
+	"fmt"
 	"github.com/zhime/monitor/core"
 	"github.com/zhime/monitor/global"
+	"github.com/zhime/monitor/router"
+	"strconv"
 )
 
 func main() {
@@ -14,15 +17,10 @@ func main() {
 	//go database.CheckSlaveStatus()
 	//global.WG.Wait()
 
-	//r := gin.Default()
-	//
-	//r.GET("/ping", func(c *gin.Context) {
-	//	c.JSON(http.StatusOK, gin.H{
-	//		"data": "ok",
-	//	})
-	//})
-	//if err := r.Run(); err != nil {
-	//	panic(err)
-	//}
+	r := router.InitRouter()
+
+	if err := r.Run(fmt.Sprintf("%s:%s", global.CONFIG.Server.Host, strconv.Itoa(global.CONFIG.Server.Port))); err != nil {
+		panic(err)
+	}
 
 }
