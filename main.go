@@ -3,13 +3,12 @@ package main
 import (
 	"github.com/zhime/monitor/core"
 	"github.com/zhime/monitor/global"
-	"github.com/zhime/monitor/model"
 )
 
 func main() {
 	core.Viper()
 	global.DB = core.InitMysql()
-	_ = global.DB.AutoMigrate(&model.User{})
+	//_ = global.DB.AutoMigrate(&model.User{})
 
 	//global.WG.Add(1)
 	//go database.CheckSlaveStatus()
