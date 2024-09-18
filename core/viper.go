@@ -6,20 +6,16 @@ import (
 	"github.com/zhime/monitor/global"
 )
 
-func Viper() *viper.Viper {
-	v := viper.New()
-	v.SetConfigName("config")
-	v.SetConfigType("yaml")
-	v.AddConfigPath(".")
-	err := v.ReadInConfig()
-	if err != nil {
+func Viper() {
+	viper.SetConfigName("config")
+	viper.SetConfigType("yaml")
+	viper.AddConfigPath(".")
+	if err := viper.ReadInConfig(); err != nil {
 		panic(fmt.Errorf("fatal error config file: %w", err))
 	}
-	v.WatchConfig()
+	viper.WatchConfig()
 
-	if err := v.Unmarshal(&global.CONFIG); err != nil {
+	if err := viper.Unmarshal(&global.CONFIG); err != nil {
 		panic(err)
 	}
-
-	return v
 }
