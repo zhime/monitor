@@ -2,6 +2,16 @@ server:
   port: 8081
   host: 127.0.0.1
 
+nacos:
+  ipAddr: 192.168.0.239
+  port: 8848
+  contextPath: /nacos
+  group: default
+  dataId: default
+  namespaceId: default
+  username: nacos
+  password: nacos
+
 mysql:
   username: root
   password: mysql123
@@ -9,6 +19,6 @@ mysql:
   port: 3306
   database: monitor
 
-ding-talk:
+dingTalk:
   web-hook: https://oapi.dingtalk.com/robot/send?access_token=41b0c9c2b3bd262fe6b9aae8ac889a0216d3cbb339857444efa6fb42fc8086cf
   secret: SEC0ab91c24c0dc7462e620647b8e80d705673e107ec3b297f838fc2157cf5054d8
