@@ -6,7 +6,7 @@ import (
 
 func main() {
 	core.Viper()
-	core.InitNacos()
+	//core.InitNacos()
 	//global.DB = core.InitMysql()
 	//_ = global.DB.AutoMigrate(&model.User{})
 
