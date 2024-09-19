@@ -14,10 +14,6 @@ func main() {
 	//go database.CheckSlaveStatus()
 	//global.WG.Wait()
 
-	//r := router.InitRouter()
-	//
-	//if err := r.Run(fmt.Sprintf("%s:%s", global.CONFIG.Server.Host, strconv.Itoa(global.CONFIG.Server.Port))); err != nil {
-	//	panic(err)
-	//}
+	core.RunServer()
 
 }

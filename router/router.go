@@ -1,22 +1,9 @@
 package router
 
-import (
-	"github.com/gin-gonic/gin"
-	"net/http"
-)
+import "github.com/zhime/monitor/router/system"
 
-func InitRouter() *gin.Engine {
-	gin.SetMode(gin.ReleaseMode)
-	Router := gin.Default()
-
-	userGroup := Router.Group("/users")
-	{
-		userGroup.GET("/", func(context *gin.Context) {
-			context.JSON(http.StatusOK, gin.H{
-				"data": "ok",
-			})
-		})
-	}
-
-	return Router
+type RouterGroup struct {
+	System system.RouterGroup
 }
+
+var RouterGroupApp = new(RouterGroup)
