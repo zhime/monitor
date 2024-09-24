@@ -14,7 +14,8 @@ func RunServer() {
 
 	systemRouter := router.RouterGroupApp.System
 
-	systemRouter.InitApiRouter(Router.Group(""))
+	apiRouterGroup := Router.Group("/api")
+	systemRouter.InitApiRouter(apiRouterGroup)
 
 	if err := Router.Run(fmt.Sprintf("%s:%s", global.CONFIG.Server.Host, strconv.Itoa(global.CONFIG.Server.Port))); err != nil {
 		panic(err)

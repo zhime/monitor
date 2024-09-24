@@ -8,10 +8,9 @@ import (
 type ApiRouter struct{}
 
 func (s *ApiRouter) InitApiRouter(Router *gin.RouterGroup) {
-	apiRouter := Router.Group("api")
 	apiRouterApi := v1.ApiGroupApp.SystemApiGroup.SystemApiApi
 
 	{
-		apiRouter.POST("createApi", apiRouterApi.CreateApi) // 创建Api
+		Router.POST("createApi", apiRouterApi.CreateApi) // 创建Api
 	}
 }
