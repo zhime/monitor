@@ -10,16 +10,16 @@ import (
 )
 
 func main() {
-	// 配置 Elasticsearch 客户端K
+	// 配置 Elasticsearch 客户端
 	cfg := elasticsearch8.Config{
 		Addresses: []string{
-			"https://192.168.0.200:9200", // Elasticsearch 节点的地址
+			"https://192.168.0.200:9200",
 		},
-		Username: "elastic", // 用户名
-		Password: "elastic", // 密码
+		Username: "elastic",
+		Password: "elastic",
 		Transport: &http.Transport{
 			TLSClientConfig: &tls.Config{
-				InsecureSkipVerify: true, // 跳过证书验证
+				InsecureSkipVerify: true,
 			},
 		},
 	}
