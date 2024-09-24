@@ -17,7 +17,6 @@ require (
 	github.com/alibabacloud-go/debug v0.0.0-20190504072949-9472017b5c68 // indirect
 	github.com/alibabacloud-go/tea v1.1.17 // indirect
 	github.com/alibabacloud-go/tea-utils v1.4.4 // indirect
-	github.com/aliyun/alibaba-cloud-sdk-go v1.61.1800 // indirect
 	github.com/aliyun/alibabacloud-dkms-gcs-go-sdk v0.2.2 // indirect
 	github.com/aliyun/alibabacloud-dkms-transfer-go-sdk v0.1.7 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
@@ -27,9 +26,13 @@ require (
 	github.com/cespare/xxhash/v2 v2.2.0 // indirect
 	github.com/cloudwego/base64x v0.1.4 // indirect
 	github.com/cloudwego/iasm v0.2.0 // indirect
+	github.com/elastic/elastic-transport-go/v8 v8.6.0 // indirect
+	github.com/elastic/go-elasticsearch/v8 v8.15.0 // indirect
 	github.com/fsnotify/fsnotify v1.7.0 // indirect
 	github.com/gabriel-vasile/mimetype v1.4.3 // indirect
 	github.com/gin-contrib/sse v0.1.0 // indirect
+	github.com/go-logr/logr v1.4.1 // indirect
+	github.com/go-logr/stdr v1.2.2 // indirect
 	github.com/go-playground/locales v0.14.1 // indirect
 	github.com/go-playground/universal-translator v0.18.1 // indirect
 	github.com/go-playground/validator/v10 v10.20.0 // indirect
@@ -64,6 +67,9 @@ require (
 	github.com/subosito/gotenv v1.6.0 // indirect
 	github.com/twitchyliquid64/golang-asm v0.15.1 // indirect
 	github.com/ugorji/go/codec v1.2.12 // indirect
+	go.opentelemetry.io/otel v1.24.0 // indirect
+	go.opentelemetry.io/otel/metric v1.24.0 // indirect
+	go.opentelemetry.io/otel/trace v1.24.0 // indirect
 	go.uber.org/atomic v1.9.0 // indirect
 	go.uber.org/multierr v1.9.0 // indirect
 	go.uber.org/zap v1.21.0 // indirect
